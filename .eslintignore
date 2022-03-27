@@ -1,0 +1,6 @@
+node_modules/
+lib/query-dsl-parser.js
+lib/query-dsl.js
+test/data/
+var/
+assets/

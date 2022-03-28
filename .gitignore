@@ -16,3 +16,4 @@ storage
 .flowconfig
 var/apn-dev-key.p12
 var/apn-dev-key-voip.p12
+settings.json

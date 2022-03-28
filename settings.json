@@ -1,0 +1,27 @@
+{
+    "port": 4001,
+    "fileManager" : {
+        "uri" : "http://localhost:3000"
+    },
+    "messenger" : {
+        "uri" : "http://localhost:1000"
+    },
+    "socketDataProvider": {
+        "url": "http://localhost:5000"
+    },
+    "database": {
+        "host": "178.154.240.81",
+        "dbname": "sozidateli",
+        "user": "sozidateli",
+        "pass": "Ko97hdFFIyuY"
+    },
+    "google-recaptcha": {
+        "key": "google-recaptcha-key",
+        "secret": "google-recaptcha-secret"
+    },
+    "telegram" : {
+        "chatId": -1001757967804,
+        "botToken": "5229693813:AAFVPZ-v5usfgjJv5jXG9gW01RNJu0qj9dc"
+    },
+    "token": "2e25a37602a45803a9e4379c63e10d9d22e3f798c454c1778304bc8257a8e612eddf7cdb16230a60e0cd479c0ce3d38c"
+}

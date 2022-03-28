@@ -1,0 +1,27 @@
+{
+    "port": 4001,
+    "fileManager" : {
+        "uri" : "http://localhost:3000"
+    },
+    "messenger" : {
+        "uri" : "http://localhost:1000"
+    },
+    "socketDataProvider": {
+        "url": "http://localhost:5000"
+    },
+    "database": {
+        "host": "host",
+        "dbname": "db_name",
+        "user": "db_user",
+        "pass": "db_password"
+    },
+    "google-recaptcha": {
+        "key": "google-recaptcha-key",
+        "secret": "google-recaptcha-secret"
+    },
+    "telegram" : {
+        "chatId": -1001757967804,
+        "botToken": "5229693813:AAFVPZ-v5usfgjJv5jXG9gW01RNJu0qj9dc"
+    },
+    "token": "random string"
+}

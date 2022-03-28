@@ -1,33 +1,33 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const {Sequelize, DATE, STRING, Model, BOOLEAN, BIGINT} = require('sequelize');
+const sequelize = require('../config/database');
 
-const qrCodeSchema = new mongoose.Schema(
-    {
-    _id: {
-        type: Schema.Types.ObjectId,
-        auto: true,
+class QRCodes extends Model { }
+
+QRCodes.init({
+    qr_id: {
+        type: BIGINT(20),
+        autoIncrement: true,
+        primaryKey: true,
     },
-    userId: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: 'users',
+    user_id: {
+        type: BIGINT(20),
+        allowNull: true,
+        defaultValue: null,
     },
-    connectedDeviceId: {
-        type: Schema.Types.ObjectId,
-        ref: 'connectedDevices',
+    create_date: {
+        type: DATE,
     },
-    lastUsedDate: {
-        type: Date,
-        default: null,
+    is_active: {
+        type: BOOLEAN,
+        defaultValue: true,
     },
-    isActive: {
-        type: Boolean,
-        default: false,
+    qr_code: {
+        type: STRING,
     },
-    disabled: {
-        type: Boolean,
-        default: false,
-    },
+}, {
+    sequelize,
+        tableName: 'qr_codes',
+        timestamps: false,
 });
 
-module.exports = mongoose.model('qrCode', qrCodeSchema);
+module.exports = QRCodes;
